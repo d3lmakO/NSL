@@ -1,2 +1,2 @@
 # NSL
-Numerical Simulation Laboratory
+Exercises for the Numerical Simulation Laboratory course (year: 2021/2022).
