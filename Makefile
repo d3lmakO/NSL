@@ -195,7 +195,7 @@ clean_ex9:
 	rm -f ex9/9_1
 
 #Exercise 10
-ex10: ex10/10_1
+ex10: ex10/10_1 ex10/10_2 ex10/10_2_1
 
 ex10/10_1: ex10/obj/10_1.o random/obj/random.o
 	mpicxx -std=c++11 ${LDFLAGS} $^ -o $@
@@ -204,6 +204,20 @@ ex10/obj/10_1.o: ex10/src/10_1.cpp random/random.h
 	mkdir -p ex10/obj
 	mpicxx -std=c++11 ${CPPFLAGS} ${CXXFLAGS} -c $< -o $@
 
+ex10/10_2: ex10/obj/10_2.o random/obj/random.o
+	mpicxx -std=c++11 ${LDFLAGS} $^ -o $@
+
+ex10/obj/10_2.o: ex10/src/10_2.cpp random/random.h
+	mkdir -p ex10/obj
+	mpicxx -std=c++11 ${CPPFLAGS} ${CXXFLAGS} -c $< -o $@
+
+ex10/10_2_1: ex10/obj/10_2_1.o random/obj/random.o
+	${LD} ${LDFLAGS} $^ -o $@
+
+ex10/obj/10_2_1.o: ex10/src/10_2_1.cpp random/random.h
+	mkdir -p ex10/obj
+	${CXX} ${CPPFLAGS} ${CXXFLAGS} -c $< -o $@
+
 clean_ex10:
 	rm -f ex10/obj/*
-	rm -f ex10/10_1
+	rm -f ex10/10_1 ex10/10_2 ex10/10_2_1
