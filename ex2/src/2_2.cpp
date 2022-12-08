@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
       
       for (int k = 0; k < N_steps; ++k)
       {
-        int ax = (int) rnd.rannyu(0.0, 3.0);
+        int ax = static_cast<int>(rnd.rannyu(0.0, 3.0));
         double forward_backward = rnd.rannyu(-1.0, 1.0);
         axes.at(ax) += (forward_backward >= 0.0 ? 1 : -1);
         rw2_dist.at(k) += axes.at(0)*axes.at(0) + axes.at(1)*axes.at(1) + axes.at(2)*axes.at(2);
@@ -104,7 +104,6 @@ int main(int argc, char* argv[])
   }
   out.close();
 
-  rnd.save_seed(SEED "/seed.out");
   return 0;
 }
 

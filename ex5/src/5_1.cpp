@@ -200,7 +200,6 @@ int main(int argc, char* argv[])
   accepted << (double) acc_gauss210 / (N_blocks * N_throws) << std::endl; 
 
   accepted.close();
-  rnd.save_seed(SEED "/seed.out");
   return 0;
 }
 

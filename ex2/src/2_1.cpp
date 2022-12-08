@@ -29,12 +29,7 @@ int main(int argc, char* argv[])
 
   Random rnd(SEED "/Primes", SEED "/seed.in");
 
-  std::ofstream out("data/N_data_2_1.txt", std::ofstream::out);
-  if (!out.is_open())
-  {
-    std::cerr << "Can't open N_data_2_1.txt" << std::endl;
-    return 1;
-  }
+  std::ofstream out("data/N_data_2_1.txt", std::ofstream::out); if (!out.is_open()) { std::cerr << "Can't open N_data_2_1.txt" << std::endl; return 1; }
   out << N_blocks << std::endl;
   out << N_throws << std::endl;
   out.close();
@@ -98,7 +93,6 @@ int main(int argc, char* argv[])
   }
   out.close();
 
-  rnd.save_seed(SEED "/seed.out");
   return 0;
 }
 

@@ -112,7 +112,6 @@ int main(int argc, char* argv[])
   }  
   out.close();
 
-  rnd.save_seed(SEED "/seed.out");
   return 0;
 }
 

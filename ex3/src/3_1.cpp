@@ -25,7 +25,6 @@ int main(int argc, char* argv[])
   constexpr int N_blocks = 100;
   constexpr int N_throws = 10000;
   constexpr int N_steps = 100;
-  //parameters
   constexpr double S0 = 100.0;
   constexpr double K = 100.0;
   constexpr double T = 1.0;
@@ -153,7 +152,6 @@ int main(int argc, char* argv[])
   }
   out.close();
 
-  rnd.save_seed(SEED "/seed.out");
   return 0;
 }
 
