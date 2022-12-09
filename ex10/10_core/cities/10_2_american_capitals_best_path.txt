@@ -1,3 +1,7 @@
+42	Austin
+17	BatonRouge
+3	LittleRock
+23	Jackson
 0	Montgomery
 8	Tallahassee
 9	Atlanta
@@ -44,7 +48,3 @@
 2	Phoenix
 30	SantaFe
 35	OklahomaCity
-42	Austin
-17	BatonRouge
-3	LittleRock
-23	Jackson

@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 { 
   constexpr int N_cities = 50;
   constexpr int N_paths = 6000;
-  constexpr int N_generations = 200;
+  constexpr int N_generations = 600;
   constexpr double p_selection = 0.1;
   constexpr double p_cross = 0.8;
   constexpr double p_mutation = 0.05;

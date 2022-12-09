@@ -1,14 +1,14 @@
-0	Montgomery
-23	Jackson
 17	BatonRouge
+23	Jackson
 3	LittleRock
 24	JeffersonCity
 12	Springfield
 13	Indianapolis
 16	Frankfort
 41	Nashville
-9	Atlanta
+0	Montgomery
 8	Tallahassee
+9	Atlanta
 39	Columbia
 31	Raleigh
 45	Richmond

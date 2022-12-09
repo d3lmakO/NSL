@@ -1,3 +1,4 @@
+23	Jackson
 0	Montgomery
 8	Tallahassee
 9	Atlanta
@@ -21,11 +22,12 @@
 13	Indianapolis
 16	Frankfort
 41	Nashville
+3	LittleRock
+24	JeffersonCity
 12	Springfield
 48	Madison
 22	StPaul
 14	DesMoines
-24	JeffersonCity
 15	Topeka
 26	Lincoln
 40	Pierre
@@ -46,5 +48,3 @@
 35	OklahomaCity
 42	Austin
 17	BatonRouge
-3	LittleRock
-23	Jackson

@@ -45,7 +45,7 @@ int main(int argc, char* argv[])
   constexpr int N_cities = 50;
   constexpr int N_paths = 6000;
   constexpr int N_migrations = 20;
-  constexpr int N_generations = 10;
+  constexpr int N_generations = 30;
   constexpr double p_selection = 0.1;
   constexpr double p_cross = 0.8;
   constexpr double p_mutation = 0.05;
@@ -173,17 +173,12 @@ int main(int argc, char* argv[])
         std::vector<int> s2_path;
         gen.crossover(p1_path, p2_path, s1_path, s2_path);
         
-        for (;;)
-        {
-          gen.mutation(s1_path);
-          gen.mutation(s2_path);
-          if (check_first(s1_path) && check_first(s2_path))
-          {
-            new_paths.push_back(s1_path);
-            new_paths.push_back(s2_path);
-            break;
-          }
-        }
+        gen.mutation(s1_path);
+        gen.mutation(s2_path);
+   
+        new_paths.push_back(s1_path);
+        new_paths.push_back(s2_path);
+       
       } 
       paths = new_paths;
       rkg.ranking(paths);
