@@ -23,6 +23,7 @@ or:
 make clean_ex*
 ```
 
+
 ## Execution
 
 To run a single exercise follow this (example with ex9):
@@ -30,11 +31,15 @@ To run a single exercise follow this (example with ex9):
 cd ex9/
 ./9_1 
 ```
+Sometime the executable file requires additional arguments (see the terminal output for the correct one).
+
+
 ## WARNING
 
 - In ex8 data file `8_2_psi2.txt` not present beacuse it exceeded 100MB (You need to run the exercise).
 - In ex10 you need to include `"mpi.h"`.
 - Part of the code in `mdmc/mdmc.cpp` is commented beacuse file is shared between `ex4` and `ex7`.
+
 
 ## Visualization
 
